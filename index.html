@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <div id="overlay" class="overlay">
+        <div class="login-box">
+            <img src="img/nosotros.jpg" alt="Nosotros" class="login-photo">
+            <div class="password-input">
+                <input type="password" id="password" disabled>
+                <div class="buttons">
+                    <button onclick="addNumber(1)">1</button>
+                    <button onclick="addNumber(2)">2</button>
+                    <button onclick="addNumber(3)">3</button>
+                    <button onclick="addNumber(4)">4</button>
+                    <button onclick="addNumber(5)">5</button>
+                    <button onclick="addNumber(6)">6</button>
+                    <button onclick="addNumber(7)">7</button>
+                    <button onclick="addNumber(8)">8</button>
+                    <button onclick="addNumber(8)">9</button>
+                    <button onclick="addNumber(9)">0</button>
+
+                    <button onclick="clearPassword()">Borrar</button>
+                    <button onclick="checkPassword()">✔</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="content" class="hidden">
+        <h1>Mi amor, llevamos juntos:</h1>
+        <p id="contador"></p>
+        
+        <h2>Recuerdos por mes</h2>
+        <div class="months">
+            <button onclick="showPhotos('enero')">Enero</button>
+            <button onclick="showPhotos('febrero')">Febrero</button>
+            <button onclick="showPhotos('marzo')">Marzo</button>
+            <button onclick="showPhotos('abril')">Abril</button>
+            <button onclick="showPhotos('mayo')">Mayo</button>
+            <button onclick="showPhotos('junio')">Junio</button>
+            <button onclick="showPhotos('julio')">Julio</button>
+            <button onclick="showPhotos('agosto')">Agosto</button>
+            <button onclick="showPhotos('septiembre')">Septiembre</button>
+            <button onclick="showPhotos('octubre')">Octubre</button>
+            <button onclick="showPhotos('noviembre')">Noviembre</button>
+            <button onclick="showPhotos('diciembre')">Diciembre</button>
+        </div>
+        
+        <div id="photos" class="photo-gallery"></div>
+    </div>
+</body>
+</html>
